@@ -1,5 +1,6 @@
 <?php
 
+// linking database 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -9,6 +10,7 @@ try {
     // set the PDO error mode to exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "Connected successfully";
+    // making the select query
     $sql = 'select * from DureAuto order by Prijs DESC';
     $q = $pdo->query($sql);
     $q->setFetchMode(PDO::FETCH_ASSOC);
