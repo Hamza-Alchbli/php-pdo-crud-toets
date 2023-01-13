@@ -1,5 +1,5 @@
 <?php
-
+// connecting to db 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,6 +11,7 @@ try {
     // set the PDO error mode to exception
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo "Connected successfully";
+    // run the delete statment using the $id that we got with $_GET
     $sql = "delete from DureAuto where id = $id";
     $pdo->exec($sql);
     echo "record is succesvol verwijderd";
