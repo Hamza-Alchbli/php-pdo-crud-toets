@@ -29,6 +29,7 @@ try {
 </head>
 
 <body>
+    <h1>De vijf duurste auto's ter wereld</h1>
     <table class="table table-bordered table-condensed">
         <thead>
             <tr>
@@ -47,7 +48,7 @@ try {
                     <td><?php echo htmlspecialchars($row['Topsnelheid']); ?></td>
                     <td><?php echo htmlspecialchars($row['Prijs']); ?></td>
                     <td>
-                        <a href="delete.php?deleteid=<?= $row['Id'] ?>" class="text-light"><img src="kruis.webp" style="width: 50px;"></a>
+                        <a href="delete.php?deleteid=<?= $row['Id'] ?>" class="text-light"><img src="https://mlyyb5yy8tjq.i.optimole.com/w:auto/h:auto/q:mauto/f:avif/https://witgebitnederland.nl/wp-content/uploads/2019/05/rood-kruis-png-.png" style="width: 50px;"></a>
                     </td>
                 </tr>
             <?php endwhile; ?>
