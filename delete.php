@@ -14,7 +14,8 @@ try {
     // run the delete statment using the $id that we got with $_GET
     $sql = "delete from DureAuto where id = $id";
     $pdo->exec($sql);
-    echo "record is succesvol verwijderd";
+    echo $pdo->exec($sql);
+    echo "<br>record is succesvol verwijderd";
     header('Refresh:3; url=read.php');
 
 } catch (PDOException $e) {
